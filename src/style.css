@@ -1,0 +1,14 @@
+/* /* src/styles.css */
+@import "tailwindcss";
+
+/* 1) Replace theme.extend.fontFamily.sans = ['Poppins', 'sans-serif'] */
+/* @theme{
+  /* This makes `font-sans` use Poppins */
+  /* --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+} */ 
+
+/* 2) Replace theme.extend.gridTemplateColumns['70/30'] = '70% 28%' */
+/* Class name with a slash must be escaped in CSS as `\\/` */
+/* @utility grid-cols-70\/30 {
+  grid-template-columns: 70% 28%;
+} */ 
