@@ -1,7 +1,8 @@
 <script setup>
+import JobListigs from '../components/JobListigs.vue';
 import Hero from '/Users/KTA144/OneDrive - Maersk Group/Desktop/Learning Projects/my-vue-app/src/components/Hero.vue'
 import HomeCards from '/Users/KTA144/OneDrive - Maersk Group/Desktop/Learning Projects/my-vue-app/src/components/HomeCards.vue'
-import JobListigs from '/Users/KTA144/OneDrive - Maersk Group/Desktop/Learning Projects/my-vue-app/src/components/JobListing.vue'
+
 
 </script>
 
@@ -9,5 +10,5 @@ import JobListigs from '/Users/KTA144/OneDrive - Maersk Group/Desktop/Learning P
     <!-- <Hero title="Test Title" subtitle="Test Subtitle"/> -->
     <Hero/>
     <HomeCards/>
-    <JobListigs :limit="3" show-button="true"/>
+    <JobListigs :limit="3" show-button="false"/>
 </template>
