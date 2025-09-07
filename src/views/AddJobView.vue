@@ -2,8 +2,11 @@
 import axios from 'axios';
 import { reactive } from 'vue';
 import { useRouter } from 'vue-router';
+// import {useToast} from 'vue-toast-notification';
+// import 'vue-toast-notification/dist/theme-sugar.css';
 
 const router = useRouter();
+// const toast = useToast();
 
 const form=reactive({
     type: 'Full-Time',
@@ -37,8 +40,10 @@ const handleSubmit=async()=>{
 
     try {
         const response=await axios.post(`/api/jobs`,newJob);
+          // toast.success("Job added successfully");
         router.push(`/jobs/${response.data.id}`);
     } catch (error) {
+        // toast.error("Error adding job");
         console.error("error fetching jobs",error);
     }
 }
